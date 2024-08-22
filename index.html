@@ -21,6 +21,9 @@
                 fontFamily: {
                     ebgaramond: ['EB Garamond', 'serif'],
                     poppins: ['Poppins', 'sans-serif']
+                },
+                backgroundImage:{
+                    banner: "url('./assets/bg-img/banner.png')"
                 }
             }
           }
@@ -33,7 +36,7 @@
     <!-- ================ header section -->
     <header id="header" class="w-full min-h-[100vh]">
         <div class="container mx-auto">
-            <nav class="py-[40px]">
+            <nav class="py-[60px]">
                 <div class="navbar bg-base-100 flex items-center">
                     <div class="navbar-start">
                       <img src="./assets/logo-img/logo.png" alt="logo">
@@ -67,6 +70,20 @@
                     </div>
                 </div>
             </nav>
+            <div class="w-full h-[660px] bg-slate-700 bg-banner bg-no-repeat bg-center bg-cover rounded-[8px] overflow-hidden">
+                <div class="w-full h-[660px] bg-gradient-to-b from-[#11111100] to to-[#111111ea] flex items-center justify-center">
+                    <div class="w-[690px] text-center text-white">
+                        <h1 class="font-ebgaramond text-7xl leading-[85px] font-extrabold mb-6">We Provide Effective Legal Solutions</h1>
+                        <p class="font-poppins text-base leading-[26px] text-[#E7E7E7] mb-8">One of the primary reasons why legal services are important is that they help individuals understand and enforce their rights. Laws and regulations can be intricate and often require professional expertise to interpret.</p>
+                        <div class="w-full h-[65px] flex items-center justify-center space-x-7">
+                            <input type="text" placeholder="Search your services" class="input input-bordered w-[500px] h-full outline-none border-none rounded-lg text-[#A0A0A0] text-base placeholder:text-base placeholder:text-[#A0A0A0] placeholder:leading-[26px] " />
+                            <input type="submit" value="Search" class="w-[150px] h-full bg-[#B68C5A] border-none outline-none rounded-lg cursor-pointer text-xl leading-[30px] font-semibold text-white hover:bg-[#c09560] transition duration-300 ease-in-out" />
+                            <!-- <input type="text" placeholder="Search your services" class="w-[500px] h-full py-[19px] px-[20px] border-none outline-none rounded-lg text-[#B68C5A] bg-red-500 placeholder:text-base placeholder:leading-[26px] placeholder:text-[#B68C5A] placeholder:font-poppins">
+                            <input type="submit" value="submit" class="bg-[#B68C5A] h-full px-10"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- ================ header section -->
