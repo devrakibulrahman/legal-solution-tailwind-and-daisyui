@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <!-- ================ google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- ================ daisy Ui cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- ================ tailwind css cdn link -->
@@ -19,7 +19,8 @@
           theme: {
             extend: {
                 fontFamily: {
-                    ebgaramond: ['EB Garamond', 'serif']
+                    ebgaramond: ['EB Garamond', 'serif'],
+                    poppins: ['Poppins', 'sans-serif']
                 }
             }
           }
@@ -29,6 +30,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    
+    <!-- ================ header section -->
+    <header id="header" class="w-full min-h-[100vh]">
+        <div class="container mx-auto">
+            <nav class="py-[40px]">
+                <div class="navbar bg-base-100 flex items-center">
+                    <div class="navbar-start">
+                      <img src="./assets/logo-img/logo.png" alt="logo">
+                    </div>
+                    <div class="navbar-center hidden lg:block">
+                        <ul class="flex space-x-8 items-center">
+                            <li class="relative text-base leading-[24px]">
+                                <a href="#" class="text-[#B68C5A]">Home</a>
+                                <i class='bx bx-chevron-right absolute top-[-5px] -right-8 text-3xl text-[#707070]'></i>
+                            </li>
+                            <li class="relative text-base leading-[24px]">
+                                <a href="#" class="text-[#707070] hover:text-[#B68C5A] transition duration-300 ease-in-out">Service</a>
+                                <i class='bx bx-chevron-right absolute top-[-5px] -right-8 text-3xl text-[#707070]'></i>
+                            </li>
+                            <li class="relative text-base leading-[24px]">
+                                <a href="#" class="text-[#707070] hover:text-[#B68C5A] transition duration-300 ease-in-out">Cases</a>
+                                <i class='bx bx-chevron-right absolute top-[-5px] -right-8 text-3xl text-[#707070]'></i>
+                            </li>
+                            <li class="relative text-base leading-[24px]">
+                                <a href="#" class="text-[#707070] hover:text-[#B68C5A] transition duration-300 ease-in-out">Blog</a>
+                                <i class='bx bx-chevron-right absolute top-[-5px] -right-8 text-3xl text-[#707070]'></i>
+                            </li>
+                            <li class="relative text-base leading-[24px]">
+                                <a href="#" class="text-[#707070] hover:text-[#B68C5A] transition duration-300 ease-in-out">Contact Us</a>
+                                <i class='bx bx-chevron-right absolute top-[-5px] -right-8 text-3xl text-[#707070]'></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <a class="cursor-pointer py-4 px-5 rounded-lg bg-[#B68C5A] text-white text-lg leading-[27px] font-semibold font-poppins hover:bg-[#c09560] transition duration-300 ease-in-out">Free Consultation</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ================ header section -->
 </body>
 </html>
